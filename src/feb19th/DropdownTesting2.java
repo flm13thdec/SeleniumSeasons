@@ -1,10 +1,10 @@
-package feb14th;
+package feb19th;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MethodsInWebElement1 {
+public class DropdownTesting2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		
@@ -14,27 +14,28 @@ public class MethodsInWebElement1 {
 		
 		driver.manage().window().maximize();
 		
-		By obj1=By.id("username");
-				driver.findElement(obj1).sendKeys("reyaz0806");
+		driver.findElement(By.name("username")).sendKeys("reyaz0806");
 		
 		driver.findElement(By.name("password")).sendKeys("reyaz123");
 		
-		Thread.sleep(3000);
-		
-		driver.findElement(By.id("username")).clear();
+		driver.findElement(By.name("login")).click();
 		
 		Thread.sleep(3000);
 		
-		driver.findElement(By.id("login")).click();
+		driver.findElement(By.name("location")).sendKeys("sydney");
 		
-		System.out.println(driver.findElement(By.id("username_span")).getText());
+		driver.findElement(By.name("room_nos")).sendKeys("2 - Two");
+		
+		driver.findElement(By.name("adult_room")).sendKeys("3 - Three");
 		
 		Thread.sleep(3000);
 		
-		System.out.println(driver.getTitle());
+		driver.findElement(By.id("Submit")).click();
+		
+		Thread.sleep(3000);
+		
 		
 		driver.quit();
-		
 
 	}
 
