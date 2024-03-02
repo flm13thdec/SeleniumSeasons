@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-02T20:00:09 IST" name="Default suite" finished-at="2024-03-02T20:00:09 IST" duration-ms="193">
+    <groups>
+    </groups>
+    <test started-at="2024-03-02T20:00:09 IST" name="Default test" finished-at="2024-03-02T20:00:09 IST" duration-ms="193">
+      <class name="mar2nd.AdactinHomePage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="setUp" finished-at="2024-03-02T20:00:09 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="registerTest()[pri:1, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="registerTest" finished-at="2024-03-02T20:00:09 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="teardown" finished-at="2024-03-02T20:00:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="setUp" finished-at="2024-03-02T20:00:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginTest()[pri:2, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="loginTest" finished-at="2024-03-02T20:00:09 IST" duration-ms="4" status="FAIL">
+          <exception class="graphql.AssertException">
+            <message>
+              <![CDATA[condition expected to be true]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[graphql.AssertException: condition expected to be true
+at graphql.Assert.assertTrue(Assert.java:85)
+at mar2nd.AdactinHomePage.loginTest(AdactinHomePage.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- graphql.AssertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="teardown" finished-at="2024-03-02T20:00:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="setUp" finished-at="2024-03-02T20:00:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="forgotPasswordTest()[pri:3, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="forgotPasswordTest" finished-at="2024-03-02T20:00:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="teardown" finished-at="2024-03-02T20:00:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method signature="changePasswordTest()[pri:4, instance:mar2nd.AdactinHomePage@7ce026d3]" started-at="2024-03-02T20:00:09 IST" name="changePasswordTest" finished-at="2024-03-02T20:00:09 IST" depends-on-methods="mar2nd.AdactinHomePage.loginTest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method mar2nd.AdactinHomePage.changePasswordTest() on instance mar2nd.AdactinHomePage@7ce026d3 depends on not successfully finished methods 
+[mar2nd.AdactinHomePage.loginTest() on instance mar2nd.AdactinHomePage@7ce026d3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method mar2nd.AdactinHomePage.changePasswordTest() on instance mar2nd.AdactinHomePage@7ce026d3 depends on not successfully finished methods 
+[mar2nd.AdactinHomePage.loginTest() on instance mar2nd.AdactinHomePage@7ce026d3]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:157)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changePasswordTest -->
+      </class> <!-- mar2nd.AdactinHomePage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
