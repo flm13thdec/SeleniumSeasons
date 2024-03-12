@@ -2478,3 +2478,45 @@ apache commons io 2.15.1 api jar download
 
 Click on "commons-io-2.15.1-bin.zip" and download								  
 								  
+
+-----------------------------------------------------
+Day 33: 12th Mar - Tuesday
+-----------------------------------------------------								  
+								  
+Logic to get unique name for Screenshot
+we will use Date time stamp using SimpleDateFormat
+
+								  
+https://jenkov.com/tutorials/java-internationalization/simpledateformat.html
+
+Tue Mar 12 19:17:44 IST 2024
+
+
+String pattern = "yyyy-MM-dd";  2024-03-12					
+
+String pattern = "yyyy-MM-dd HH:mm:ss"; 2024-03-12 19:19:01			  
+
+FAILED: mar12th.JavaScriptExecutorDemo1.javaScriptTest
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted:
+ Element is not clickable at point (692, 7405)
+  
+ElementClickInterceptedException :
+
+Reason : There is some other element which is overlaping on this element 
+
+Solution: a) you can scroll down and wait for somtime and click
+		  b) you can user javascript to directly click the element in DOM 
+		  
+JavascriptExecutor(I):
+
+executeScript(String, Object...):Object 
+
+Here String is the JavaScript statement or the program ,
+
+Object ... here three dots means it can be varibale argument array of Objects (VarArgs ) 
+
+?????????????????????????????????????????
+Assignment
+
+	  
+  
