@@ -1,4 +1,4 @@
-package mar12th;
+package mar13th;
 
 import java.io.File;
 import java.io.IOException;
@@ -6,18 +6,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class JavaScriptExecutorDemo1 {
+public class ScrollDemo1 {
 	
 
 	WebDriver driver;
@@ -31,34 +29,12 @@ public class JavaScriptExecutorDemo1 {
 	}
 	
 	@Test
-	public void  javaScriptTest() throws IOException
+	public void scrollTest() throws IOException
 	{
-		
-		//driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']")).click();
-		
-		try
-		{
-			// here write code to click the pop-up close button
-			
-			driver.switchTo().frame("webklipper-publisher-widget-container-notification-frame");
-			
-			Thread.sleep(3000);
-			
-			driver.findElement(By.xpath("//i[@class='wewidgeticon we_close']")).click();
-			
-			driver.switchTo().defaultContent();
-		}
-		catch(Exception e)
-		{
-			System.out.println(e.getMessage());
-			driver.switchTo().defaultContent();
-		}
-		
-		WebElement e1=driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']"));
 		
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		
-		js.executeScript("arguments[0].click();", e1);
+		js.executeScript("window.scrollBy(0, 1000);");
 		
 	}
 	

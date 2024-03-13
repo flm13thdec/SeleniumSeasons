@@ -2515,8 +2515,64 @@ Here String is the JavaScript statement or the program ,
 
 Object ... here three dots means it can be varibale argument array of Objects (VarArgs ) 
 
-?????????????????????????????????????????
-Assignment
 
-	  
+-----------------------------------------------------
+Day 34: 13th Mar - Tuesday
+-----------------------------------------------------								  
+
+//i[@class='wewidgeticon we_close']
+	
+??????????????????????????????????????????????????????
+In https://www.pepperfry.com/
+
+collect all links under "Partner With Us" module 
+
+click each link and switch to the window for that corresponding link
+and print the title and url 
+
+hint :  block //p[text()='Partner With Us']/parent::div
+
+use findElements by.tagName "a"
+
+
+
+???????????????????????????????????????????????????????
+
+How to Scroll in a Web Page using JavaScript ??
+
+
+Window scrollBy()
+
+window.scrollBy(0, 1000);
+
+
+How to Scroll in a Web Page to bottom  using JavaScript ??
+
+js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
+
+How to Scroll in a Web Page to a particular using JavaScript ??
+
+WebElement element = driver.findElement(By.xpath(""));
+element.scrollIntoView();
+
+<img loading="eager" height="460" width="418" src="https://ii1.pepperfry.com/assets/3d3d80ba-51fb-44ff-bc74-b371e1927bf3.jpg" alt="">
+
+
+org.openqa.selenium.JavascriptException: javascript error: Unexpected token '.'
+
+=============================================
+Waits in Selenium
+or
+Synchronization Point 
+or 
+Wait MEchanism
+
+
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='firstname']"}
+
   
+Reason 1 : Element not loaded quickly because of Synchronization 
+
+Solution 1: Use Waits concpet to overcome synchronization
+
+		Thread.sleep(3000);

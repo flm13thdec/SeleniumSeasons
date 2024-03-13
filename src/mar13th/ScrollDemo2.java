@@ -1,4 +1,4 @@
-package mar12th;
+package mar13th;
 
 import java.io.File;
 import java.io.IOException;
@@ -11,13 +11,12 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class JavaScriptExecutorDemo1 {
+public class ScrollDemo2 {
 	
 
 	WebDriver driver;
@@ -31,10 +30,8 @@ public class JavaScriptExecutorDemo1 {
 	}
 	
 	@Test
-	public void  javaScriptTest() throws IOException
+	public void scrollTest() throws IOException
 	{
-		
-		//driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']")).click();
 		
 		try
 		{
@@ -54,11 +51,9 @@ public class JavaScriptExecutorDemo1 {
 			driver.switchTo().defaultContent();
 		}
 		
-		WebElement e1=driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']"));
-		
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		
-		js.executeScript("arguments[0].click();", e1);
+		js.executeScript("window.scrollBy(0, document.body.scrollHeight);");
 		
 	}
 	

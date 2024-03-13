@@ -1,4 +1,4 @@
-package mar12th;
+package mar13th;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,7 +17,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class JavaScriptExecutorDemo1 {
+public class ScrollDemo3 {
 	
 
 	WebDriver driver;
@@ -31,10 +31,8 @@ public class JavaScriptExecutorDemo1 {
 	}
 	
 	@Test
-	public void  javaScriptTest() throws IOException
+	public void scrollTest() throws IOException
 	{
-		
-		//driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']")).click();
 		
 		try
 		{
@@ -54,11 +52,11 @@ public class JavaScriptExecutorDemo1 {
 			driver.switchTo().defaultContent();
 		}
 		
-		WebElement e1=driver.findElement(By.xpath("//a[text()='Sell on Pepperfry']"));
+		WebElement element=driver.findElement(By.xpath("//img[contains(@src,'3d3d80ba-51fb-44ff-bc74-b371e1927bf3')]"));
 		
 		JavascriptExecutor js=((JavascriptExecutor)driver);
 		
-		js.executeScript("arguments[0].click();", e1);
+		js.executeScript("arguments[0].scrollIntoView();", element);
 		
 	}
 	
