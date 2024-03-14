@@ -2517,7 +2517,7 @@ Object ... here three dots means it can be varibale argument array of Objects (V
 
 
 -----------------------------------------------------
-Day 34: 13th Mar - Tuesday
+Day 34: 13th Mar - Wednesday
 -----------------------------------------------------								  
 
 //i[@class='wewidgeticon we_close']
@@ -2576,3 +2576,82 @@ Reason 1 : Element not loaded quickly because of Synchronization
 Solution 1: Use Waits concpet to overcome synchronization
 
 		Thread.sleep(3000);
+		
+
+-----------------------------------------------------
+Day 35: 14th Mar - Thursday
+-----------------------------------------------------								  
+
+why we need Synchronization ?
+
+our Script will be fast but the application can be slow because of different reasons 
+
+
+1) Using Thread.sleep() or HardWait
+
+2) using Implicit Wait 
+
+
+driver.manage().timeouts.implicitlyWait(Duration);
+
+or
+
+driver.manage().timeouts.implicitlyWait(long, TimeUnit); This is getting depcricated , don't use 
+
+-> it checks the element is present in DOM or not 
+
+3) Explicit Wait or WebDriverWait 
+
+WebDriverWait
+
+WebDriverWait(WebDriver, Duration)  ==> this Constructor is most prefered 
+WebDriverWait(WebDriver, Duration, Duration)
+WebDriverWait(WebDriver, Duration, Duration, Clock, Sleeper)
+
+-> until(Function<? super F, T>):here argument is nthing but the condition to be met 
+which is provided by a class called ExpectedConditions methods 
+
+?????????????????????????????????????????????????????????????
+Assignment 
+
+in https://www.amazon.in/
+
+CLick on image which is haaving below 
+
+xpath //img[@alt='Cookware & dining']
+
+hint : use ExplicitWait , until the element is visible 
+
+????????????????????????????????????????????????????????????
+
+
+
+4) FluentWait 
+
+This is an advance Wait mechanism of Explicit Wait 
+
+
+Improvements for Explicit Waits
+
+-> in WebDriverWait the second argument in constructor always takes long which is in seconds (till Version 3 Selenium)
+
+	withTimeout(Duration)
+
+-> Here the polling time is always 500 milli Seconds 
+
+	pollingEvery(Duration)
+
+-> There is no implicit Exception handling mechanism , should be done by using try catch 
+
+	ignoreAll(Collection<Class<? extends K>>)
+	ignoring(Class<? extends Throwable>)
+
+
+FluentWait.class:
+
+	FluentWait(T) ==> this Constructor is most prefered 
+	FluentWait(T, Clock, Sleeper)
+	
+Methods :
+
+withTimeout(Duration)	

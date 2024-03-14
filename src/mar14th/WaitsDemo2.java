@@ -1,6 +1,7 @@
-package mar13th;
+package mar14th;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -10,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class WaitsDemo1 {
+public class WaitsDemo2 {
 
 WebDriver driver;
 	
@@ -20,6 +21,7 @@ WebDriver driver;
 		driver=new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 	
 	@Test
@@ -27,9 +29,7 @@ WebDriver driver;
 	{
 		
 		driver.findElement(By.xpath("//a[text()='Create new account']")).click();
-		
-		Thread.sleep(5000);
-		
+				
 		driver.findElement(By.xpath("//input[@name='firstname']")).sendKeys("riyaz");
 		
 	}
