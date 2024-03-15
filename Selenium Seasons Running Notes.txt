@@ -2655,3 +2655,58 @@ FluentWait.class:
 Methods :
 
 withTimeout(Duration)	
+
+
+
+-----------------------------------------------------
+Day 36: 15th Mar - Friday
+-----------------------------------------------------								  
+
+To validate Radio Buttons or Check box
+
+
+isSelected method
+
+---------------------------------
+To Retrieve Data from Web Table 
+
+					Web Table 
+					
+					
+		Static 					Dynamic
+
+Hiererchy of Web Table 
+
+
+<table 
+	<thead
+		<tr
+		  <th
+		   :
+		   :
+	<tbody 
+		<tr
+		   <td
+		   <td
+		   :
+		   :
+		<tr
+		   <td
+		   <td
+		   :
+		   :
+		:
+		:
+		
+//table/tbody/tr[1]/td[1]  //table/tbody/tr[1]/td[2]  ..... //table/tbody/tr[1]/td[8]
+
+//table/tbody/tr[2]/td[1] //table/tbody/tr[2]/td[2]  ..... //table/tbody/tr[1]/td[8]
+:
+:
+
+//table/tbody/tr[36]/td[1]					
+					
+String part1="//table/tbody/tr[";
+String part2="]/td[";
+String part3="]";
+
